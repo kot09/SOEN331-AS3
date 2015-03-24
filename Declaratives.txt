@@ -1,0 +1,5 @@
+Qo = dormant
+Q = {dormant, init, idle, monitoring, error_diagnosis, init_errs, safe_shutdown }
+E1 = {start, kill, init_ok, begin_monitoring, init_crash, retry_init, shutdown, sleep, idle crash, idle_rescue, monitor_crash, moni_rescue}
+E2 = {init_err_msg, error saving protocols, loading drivers, clean previous state, idle_err_msg, moni_err_msg}
+V = {allLoaded=Boolean, retry=N}
