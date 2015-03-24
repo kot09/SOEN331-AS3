@@ -56,8 +56,11 @@ superstate(error_diagnosis,error_rcv).
 superstate(error_diagnosis,reset_module_data).
 superstate(error_diagnosis,applicable_rescue).
 
-%%
+%% initial_state(S1, S2) implies that S1 is the initial state of S2
 
-initial_state()
-
+initial_state(dormant, null).
+initial_state(boot_hw, init).
+initial_state(monidle, monitoring).
+initial_state(prep_vpurge, lockdown).
+initial_state(error_rcv, error_diagnosis).
 
